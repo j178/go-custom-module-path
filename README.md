@@ -17,17 +17,18 @@ $ curl -s https://go.uber.org/zap?go-get=1 | grep go-import
 
 ChatGPT 的回答是：
 
-1. Semantic Import Versioning: Custom module paths allow organizations to use semantic import versioning, which means they can release breaking changes without changing the import path. This enables smooth upgrades for consumers of the module.
-2. Improved Readability: With custom module paths, organizations can create a more descriptive and intuitive import path that aligns with their own namespaces and project structures. It can make the codebase more readable and understandable to developers.
-3. Consistent Import Paths: Custom module paths allow organizations to maintain consistent import paths across different repositories and projects. This is particularly useful when projects are split across multiple repositories or when an organization has multiple repositories with related modules.
-4. Vendor-agnostic: Using a custom module path makes the codebase vendor-agnostic, meaning the code can be easily integrated with other version control systems or package managers. This can be beneficial if an organization decides to move away from GitHub or migrate to alternative package managers.
-5. Branding and Identity: Custom module paths provide organizations with the opportunity to promote their brand and establish a unique identity. By using a custom module path, organizations can reinforce their branding and differentiate themselves from other projects or libraries.
+1. **Semantic Import Versioning**: Custom module paths allow organizations to use semantic import versioning, which means they can release breaking changes without changing the import path. This enables smooth upgrades for consumers of the module.
+2. **Improved Readability**: With custom module paths, organizations can create a more descriptive and intuitive import path that aligns with their own namespaces and project structures. It can make the codebase more readable and understandable to developers.
+3. **Consistent Import Paths**: Custom module paths allow organizations to maintain consistent import paths across different repositories and projects. This is particularly useful when projects are split across multiple repositories or when an organization has multiple repositories with related modules.
+4. **Vendor-agnostic**: Using a custom module path makes the codebase vendor-agnostic, meaning the code can be easily integrated with other version control systems or package managers. This can be beneficial if an organization decides to move away from GitHub or migrate to alternative package managers.
+5. **Branding and Identity**: Custom module paths provide organizations with the opportunity to promote their brand and establish a unique identity. By using a custom module path, organizations can reinforce their branding and differentiate themselves from other projects or libraries.
 
 ## 如何实现自定义的 go module path
 
 1. 拥有一个域名，比如 j178.dev
 2. 在 Vercel 上部署该项目
-3. 将 go.j178.dev 设置为该项目的 custom domain
+3. 添加一条 CNAME 记录，将 go.j178.dev CNAME 到 cname.vercel-dns.com.
+4. 将 go.j178.dev 设置为该项目的 custom domain
 
 ## Try it out
 
